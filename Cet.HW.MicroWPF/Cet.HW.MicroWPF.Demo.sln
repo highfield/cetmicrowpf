@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.HW.MicroWPF.Demo", "Cet.HW.MicroWPF.Demo\Cet.HW.MicroWPF.Demo.csproj", "{BF3CA622-738C-4480-B2B5-923EB09549B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.HW.MicroWPF", "Cet.HW.MicroWPF\Cet.HW.MicroWPF.csproj", "{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cet.HW.MicroWPF.Tutorial", "Cet.HW.MicroWPF.Tutorial\Cet.HW.MicroWPF.Tutorial.csproj", "{2C5AB269-B25E-456B-92B0-262F9480D9D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3CA622-738C-4480-B2B5-923EB09549B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5AB269-B25E-456B-92B0-262F9480D9D4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

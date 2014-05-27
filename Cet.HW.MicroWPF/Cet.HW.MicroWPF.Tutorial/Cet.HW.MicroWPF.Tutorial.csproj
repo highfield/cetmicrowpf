@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>Cet.HW.MicroWPF.Tutorial</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Cet.HW.MicroWPF.Tutorial</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C5AB269-B25E-456B-92B0-262F9480D9D4}</ProjectGuid>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <DeployDevice>Netduino</DeployDevice>
+    <DeployTransport>USB</DeployTransport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="030_PushButton\PushButtonDemo.cs" />
+    <Compile Include="040_ToggleSwitch\ToggleSwitchDemo.cs" />
+    <Compile Include="050_Slider\SliderDemo.cs" />
+    <Compile Include="060_DialKnob\DialKnobDemo.cs" />
+    <Compile Include="100_StackPanel\StackPanelDemo.cs" />
+    <Compile Include="120_GridSingle\GridSingleDemo.cs" />
+    <Compile Include="110_ContentControl\ContentControlDemo.cs" />
+    <Compile Include="130_GridRowCol\GridRowColDemo.cs" />
+    <Compile Include="140_GridSpanning\GridSpanningDemo.cs" />
+    <Compile Include="200_Windowing\WindowingDemo.cs" />
+    <Compile Include="210_Navigation\NavigationDemo3.cs" />
+    <Compile Include="210_Navigation\NavigationDemo2.cs" />
+    <Compile Include="210_Navigation\NavigationDemo.cs" />
+    <Compile Include="220_Font\FontDemo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Hardware.PWM" />
+    <Reference Include="Microsoft.SPOT.Hardware.SerialPort" />
+    <Reference Include="Microsoft.SPOT.Native" />
+    <Reference Include="Microsoft.SPOT.Net" />
+    <Reference Include="SecretLabs.NETMF.Hardware" />
+    <Reference Include="SecretLabs.NETMF.Hardware.Netduino" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cet.HW.MicroWPF\Cet.HW.MicroWPF.csproj">
+      <Project>{180203C2-FB1B-4E8F-BA8A-5DE01CE9B3EB}</Project>
+      <Name>Cet.HW.MicroWPF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="000_BasicSetup\" />
+    <Folder Include="010_HelloWorld\" />
+    <Folder Include="020_TouchCalib\" />
+    <Folder Include="300_CustomWidget\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+  </ItemGroup>
+</Project>
